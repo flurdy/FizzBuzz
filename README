@@ -5,4 +5,4 @@ Execute with:
 Or
  mvn test
 Or download jar from www.ivar.co.uk/cargo/FizzBuzz.jar and execute
- java -jar FizzBuzz.jar FizzBuzzApplication
+ java -cp FizzBuzz.jar FizzBuzzApplication
