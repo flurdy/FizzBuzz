@@ -1,0 +1,8 @@
+A simple Fizz,Buzz,FizzBuzz example.
+
+Execute with:
+ mvn compile exec:java
+Or
+ mvn test
+Or download jar from www.ivar.co.uk/cargo/FizzBuzz.jar and execute
+ java -jar FizzBuzz.jar FizzBuzzApplication
