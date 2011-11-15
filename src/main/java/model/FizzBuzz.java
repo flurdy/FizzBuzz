@@ -10,22 +10,20 @@ public class FizzBuzz {
         return i % 5 == 0;
     }
 
-    private static boolean isNeitherFizzNorBuzz(int i){
-        return !FizzBuzz.isFizz(i) && !FizzBuzz.isBuzz(i);
+    private static boolean isFizzBuzz(int i){
+        return isFizz(i) && isBuzz(i);
     }
 
     public static String returnFizzBuzzOrCount(int i) {
-        final StringBuffer output = new StringBuffer();
-        if( isNeitherFizzNorBuzz(i) ){
-            output.append(i);
+        if( isFizzBuzz(i) ){
+            return "FizzBuzz";
+        } else if( isFizz(i) ){
+            return "Fizz";
+        } else  if( isBuzz(i) ){
+            return "Buzz";
         } else {
-            if( FizzBuzz.isFizz(i) ){
-                 output.append("Fizz");
-            }
-            if( FizzBuzz.isBuzz(i) ){
-                 output.append("Buzz");
-            }
+            return ""+i;
         }
-        return output.toString();
     }
+
 }
